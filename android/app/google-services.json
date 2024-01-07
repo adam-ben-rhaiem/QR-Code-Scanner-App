@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "201302878358",
+    "project_id": "yarabbi-5c292",
+    "storage_bucket": "yarabbi-5c292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201302878358:android:19a490bc66a187555b7ab7",
+        "android_client_info": {
+          "package_name": "com.yarabbiya3ali.flutter_login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsWCY5jqavPpgkCCJejXbwSYX-6TaKE6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
