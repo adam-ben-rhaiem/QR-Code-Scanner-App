@@ -1,25 +1,10 @@
 import 'package:flutter/material.dart';
 
-class MainPage extends StatefulWidget {
-  final List<String> initialData;
-  const MainPage({Key? key, required this.initialData}) : super(key: key);
-  @override
-  _MainPageState createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
-  final List<String> dataList = [];
-  @override
-  void initState() {
-    super.initState();
-    dataList.addAll(widget.initialData);
-  }
-  void update(String newData) {
-    setState(() {
-      dataList.add(newData);
-    });
-  }
-
+class MainPage extends StatelessWidget {
+  final String scannedData;
+  final String scannedPrice;
+  const MainPage({Key? key, required this.scannedData , required this.scannedPrice }) : super(key: key);
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,14 +17,67 @@ class _MainPageState extends State<MainPage> {
         ),
         centerTitle: true,
       ),
-      body: ListView.builder(
-        itemCount: dataList.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(dataList[index]),
-          );
-        },
-      ),
+      body:Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            SizedBox(height: 20.0),
+
+            Container(
+              padding: EdgeInsets.all(25.0),
+              margin: EdgeInsets.only(top: 10.0),
+              decoration: BoxDecoration(
+                color: Colors.purple[100],
+                borderRadius: BorderRadius.circular(30.0),
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Article :',
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          fontFamily:'Lemon' // Change font family
+                        ),
+                      ),
+                      Text(
+                        'Prix :',
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          fontFamily: 'Arial', // Change font family
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 8.0), // Add space between the rows
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        scannedData,
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          fontFamily: 'Arial', // Change font family
+                          fontWeight: FontWeight.bold, // Example: bold font weight
+                        ),
+                      ),
+                      Text(
+                        scannedPrice,
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          fontFamily: 'Arial', // Change font family
+                          fontWeight: FontWeight.bold, // Example: bold font weight
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           // Add bottom bar button logic here
