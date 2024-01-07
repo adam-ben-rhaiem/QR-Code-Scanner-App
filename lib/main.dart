@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const Loginform(),
         '/signup': (context) => const Signup(),
         '/scanner': (context) =>  Scanner(),
-        '/mainpage': (context) => const MainPage(initialData: [],),    
+        '/mainpage': (context) => const MainPage(scannedData: '', scannedPrice: '',),    
 
 
       }),
