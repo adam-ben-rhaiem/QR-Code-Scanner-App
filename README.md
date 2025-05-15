@@ -1,4 +1,4 @@
-# 📱 QR Code Scanner App - Flutter
+# 📱 QR Code Scanner App 
 
 A simple and efficient QR Code Scanner application built using Flutter. This app allows users to scan QR codes instantly using the device's camera and displays the content in real-time.
 
