@@ -38,12 +38,9 @@ flutter run
 
 ## 📲How It Works
 
-Open the app and grant camera permissions.
-
-The camera starts and scans for QR codes.
-
-Once detected, the data is displayed on the screen.
-
-The user can copy the content to clipboard or open links.
+- Open the app and grant camera permissions.
+- The camera starts and scans for QR codes.
+- Once detected, the data is displayed on the screen.
+- The user can copy the content to clipboard or open links.
 
  
