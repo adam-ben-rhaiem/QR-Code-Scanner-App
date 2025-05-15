@@ -36,7 +36,7 @@ flutter run
 
 ```
 
-📲 How It Works
+## 📲How It Works
 
 Open the app and grant camera permissions.
 
