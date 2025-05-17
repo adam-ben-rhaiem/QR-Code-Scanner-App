@@ -29,7 +29,7 @@ A simple and efficient QR Code Scanner application built using Flutter. This app
 ### Installation
 
 ```bash
-git clone https://github.com/adam-ben-rhaime/Scanner-QR--Flutter.git
+git clone https://github.com/adam-ben-rhaime/QR Code Scanner App.git
 cd Scanner-QR--Flutter
 flutter pub get
 flutter run
